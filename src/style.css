@@ -20,7 +20,7 @@
 
 @font-face {
 	font-family: 'Geosans Light';
-	src: url('GeosansLight.ttf') format('truetype');
+	src: url('../assets/fonts/GeosansLight.ttf') format('truetype');
 }
 
 *, html {
