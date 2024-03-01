@@ -85,7 +85,7 @@ body {
 	border: 0;
 	background: rgba(85, 99, 170, 1);
 
-	background-image: url('./images/pause.png');
+	background-image: url('../assets/images/pause.png');
 	background-size: 15px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -134,7 +134,7 @@ body {
 	width: 75px;
 	float: left;
 	margin: auto;
-	background-image: url('./images/logo.png');
+	background-image: url('../assets/images/logo.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -318,7 +318,7 @@ li a:active {
 	height: 300px;
 	width: 300px;
 	padding: 10px;
-	background-image: url('./images/logo.png');
+	background-image: url('../assets/images/logo.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -359,7 +359,7 @@ li a:active {
 	border-radius: 50px;
 
 	background: rgba(85, 99, 170, 1);
-	background-image: url('./images/up.png');
+	background-image: url('../assets/images/up.png');
 	background-size: 30px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -370,7 +370,7 @@ li a:active {
 
 #bottom-button:hover {
 	background: rgba(85, 99, 170, 1);
-	background-image: url('./images/up.png');
+	background-image: url('../assets/images/up.png');
 	background-size: 40px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -378,7 +378,7 @@ li a:active {
 
 #bottom-button:active {
 	background: rgba(85, 99, 170, 0.8);
-	background-image: url('./images/up.png');
+	background-image: url('../assets/images/up.png');
 	background-size: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
