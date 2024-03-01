@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<!--
+	+-------------------------------+
+	+ Bachir 2C - Linear Equation   +
+	+-------------------------------+
+	+ This is one boring task that  +
+	+ I hope I'll never do again... +
+	+-------------------------------+
+-->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+		<script type="text/javascript" src="jquery.3.1.1.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<title>Cool Website</title>
+	</head>
+
+	<!-- Visual content here -->
+	<body>
+		<div class="navigation-bar-opaque">
+			<div id="logo"></div>
+			<ul>
+				<li><a id="nav-start" href="#">Start</a></li>
+				<li><a id="nav-play" href="#">Play</a></li>
+				<li><a id="nav-info" href="#">Info</a></li>
+			</ul>
+		</div>
+
+		<div class="wrapper-opaque">
+			<div class="start-container">
+				<h1>Cool Website</h1>
+
+				<button id="play" class="cool-button">Play Now</button>
+			</div>
+
+			<!--<button id="play-toggle-button"></button>-->
+
+			<div 	class="bg-image" id="bg-first"
+					style="background-image: url('../assets/images/night_flat.png'); opacity: 1"
+            ></div>
+
+			<div 	class="bg-image" id="bg-second"
+					style="background-image: url('../assets/images/sunset_flat.jpeg'); opacity: 0;"
+            ></div>
+		</div>
+
+		<div class="wrapper">
+			<h1>Linear Equation Game</h1>
+			
+<!-- Description of the game -->
+<pre>This is a JavaScript based game
+
+that simulates a coordinate graph
+
+with an unknown formula to solve.</pre>
+<!-- End -->
+
+			<div id="canvas-interaction-container">
+				<canvas id="canvas-context"></canvas>
+
+				<div id="game-choice">
+					<div id="interaction-sub-container">
+						<button id="game-mode" class="cool-button">Game mode</button>
+						<button id="free-mode" class="cool-button">Free mode</button>
+					</div>
+				</div>
+
+				<div id="game-status-container" style="display: none">
+					<p id="game-choice-status">y = 
+						<span id="kValue" class="value-text-big">k</span> * x + 
+						<span id="mValue" class="value-text-big">m</span>
+						<span id="correctStatus" style="font-size: 20px"></span>
+					</p>
+
+					<p id="game-counter"><span id="correctAnswers" style="color: #000">0</span> out of 10</p>
+				</div>
+
+				<div id="game-free-mode" style="display: none">
+					<input type="text" class="cool-text-input" id="kInput" placeholder="K value" />
+					<input type="text" class="cool-text-input" id="mInput" placeholder="M value" />
+
+					<div id="interaction-sub-container">
+						<button id="random-calc" class="cool-button">Random</button>
+						<button id="calculate" class="cool-button">Calculate</button>
+					</div>
+				</div>
+			</div>
+
+			<button id="start" class="cool-button">Start</button>
+		</div>
+
+		<div class="wrapper" id="info-wrapper" style="background: #444">
+			<h1 style="color: #fff">Info</h1>
+			
+			<div id="info-container">
+				<div id="info-logo"></div>
+
+<!-- Description of the game -->
+<pre>Author: Bachir ...
+Created: Feb 2017
+
+This site and game was created for a little school project i had.
+
+Cool Website
+</pre>
+<!-- End -->
+
+			</div>
+		</div>
+
+		<div id="footer">
+			<h1>Copyrights @ Bachir The Man</h1>
+		</div>
+
+		<div id="bottom-button"></div>
+
+	</body>
+</html> 
