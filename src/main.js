@@ -33,11 +33,11 @@ $(document).ready(function() {
   var scrollPos = $(window).scrollTop();
 
   // Real time nav bar listener
-  if(scrollPos > 100) {
+  if (scrollPos > 100) {
     navBar.addClass("navigation-bar");
     logo.css("margin-left", "0");
     navRow.css("margin-right", "0");
-  } else if(scrollPos < 100) {
+  } else if (scrollPos < 100) {
     navBar.removeClass("navigation-bar");
     logo.css("margin-left", "15px");
     navRow.css("margin-right", "15px");
@@ -47,12 +47,12 @@ $(document).ready(function() {
   $(window).scroll(function(event) {
     var scrollPos = $(window).scrollTop();
 
-    if(scrollPos > 100) {
+    if (scrollPos > 100) {
       bottomBtn.css("bottom", "15px");
       navBar.addClass("navigation-bar");
       logo.css("margin-left", "5px");
       navRow.css("margin-right", "5px");
-    } else if(scrollPos < 100) {
+    } else if (scrollPos < 100) {
       bottomBtn.css("bottom", "-500px");
       navBar.removeClass("navigation-bar");
       logo.css("margin-left", "15px");
@@ -136,7 +136,7 @@ $(document).ready(function() {
   setInterval(function() {
     secondBg.css("z-index", "-50");
 
-    if(secondVisible) {
+    if (secondVisible) {
       secondVisible = false;
       secondBg.fadeTo("slow", 0);
     } else {
@@ -204,7 +204,7 @@ $(document).ready(function() {
 
     clickCount += 1;
 
-    if(clickCount == 3) {
+    if (clickCount == 3) {
       clickCount = 0;
 
       render();
@@ -246,7 +246,7 @@ $(document).ready(function() {
   }
 
   function handleClick(x, y) {
-    if(gameStart) {
+    if (gameStart) {
       var newPoint = pointToGrid(x, y);
 
       var reversedPoint = gridToPoint(newPoint.x, newPoint.y);
@@ -258,14 +258,14 @@ $(document).ready(function() {
   }
 
   function renderObjects() {
-    if(coords.length == 1)
+    if (coords.length == 1)
       render();
 
-    for(var i = 0; i < coords.length; i++) {
+    for (var i = 0; i < coords.length; i++) {
       renderGraphButton(coords[i][0], coords[i][1], "green");
     }
 
-    if(coords.length >= 2) {
+    if (coords.length >= 2) {
       drawLine(coords[0], coords[1], "green");
       checkResult();
     }
@@ -289,12 +289,12 @@ $(document).ready(function() {
 
     var userKValue = ((coords[0][1] - coords[1][1]) / (coords[1][0] - coords[0][0]));
 
-    if(userKValue == k)
+    if (userKValue == k)
       kValueOK = true;
 
     var highestYCoord;
 
-    if(coords[0][1] < coords[1][1])
+    if (coords[0][1] < coords[1][1])
       highestYCoord = coords[0];
     else
       highestYCoord = coords[1];
@@ -302,13 +302,13 @@ $(document).ready(function() {
     var pointInGrid = pointToGrid(highestYCoord[0], highestYCoord[1]);
     var userMValue = pointInGrid.y - k * pointInGrid.x;
 
-    if(userMValue == m)
+    if (userMValue == m)
       mValueOK = true;
 
-    if(kValueOK && mValueOK)
+    if (kValueOK && mValueOK)
       correct = true;
 
-    if(!correct) {
+    if (!correct) {
       colorStatus = "red";
 
       correctStatus.css("color", colorStatus);
@@ -335,7 +335,7 @@ $(document).ready(function() {
 
     var score = registerScore(correct);
 
-    if(score) {
+    if (score) {
       coords = [];
     }
   }
@@ -343,12 +343,12 @@ $(document).ready(function() {
   function registerScore(correct) {
     answerIndex++;
 
-    if(correct)
+    if (correct)
       correctAnswers++;
 
     document.getElementById("correctAnswers").innerHTML = correctAnswers;
 
-    if(answerIndex == scorePerRound) {
+    if (answerIndex == scorePerRound) {
       onFinishedGame();
       gameStart = false;
       return false;
@@ -369,11 +369,11 @@ $(document).ready(function() {
   }
 
   function calculate(random) {
-    if(random) {
+    if (random) {
       k = randomNumber(-5, 5);
       m = randomNumber(-5, 5);
 
-      if(k == 0)
+      if (k == 0)
         k = 1;
 
       kInput.value = k;
@@ -402,12 +402,12 @@ $(document).ready(function() {
     k = randomNumber(-5, 5);
     m = randomNumber(-5, 5);
 
-    if(k == 0)
+    if (k == 0)
       k = 1;
-    else if(k > 5)
+    else if (k > 5)
       k = 5;
 
-    if(m > 5)
+    if (m > 5)
       m = 5;
 
     document.getElementById("kValue").innerHTML = k;
@@ -417,17 +417,17 @@ $(document).ready(function() {
   function renderSection(type) {
     choiceContainer.css("display", "none");
 
-    if(type == "game") {
+    if (type == "game") {
       gameContainer.css("display", "block");
     }
 
-    if(type == "free") {
+    if (type == "free") {
       freeContainer.css("display", "block");
     }
   }
 
   function renderGraphButton(x, y, color) {
-    if(gameStart) {
+    if (gameStart) {
       context.beginPath();
 
       context.arc(x, y, 5, 0, 2 * Math.PI, false);
@@ -457,14 +457,14 @@ $(document).ready(function() {
 
     context.lineWidth = 1;
 
-    for(var i = 0; i <= gridSize; i = i + (gridSize / 10)) {
+    for (var i = 0; i <= gridSize; i = i + (gridSize / 10)) {
       context.beginPath();
       context.moveTo(i, 0);
       context.lineTo(i, gridSize);
       context.stroke();
     }
 
-    for(var i = 0; i <= gridSize; i = i + (gridSize / 10)) {
+    for (var i = 0; i <= gridSize; i = i + (gridSize / 10)) {
       context.beginPath();
       context.moveTo(0, i);
       context.lineTo(gridSize, i);
@@ -475,14 +475,14 @@ $(document).ready(function() {
     context.lineWidth = 2;
     context.fillStyle = "#000";
 
-    for(var i = 0; i <= gridSize; i = i + (gridSize / 2)) {
+    for (var i = 0; i <= gridSize; i = i + (gridSize / 2)) {
       context.beginPath();
       context.moveTo(0, i);
       context.lineTo(gridSize, i);
       context.stroke();
     }
 
-    for(var i = 0; i <= gridSize; i = i + (gridSize / 2)) {
+    for (var i = 0; i <= gridSize; i = i + (gridSize / 2)) {
       context.beginPath();
       context.moveTo(i, 0);
       context.lineTo(i, gridSize);
@@ -490,39 +490,39 @@ $(document).ready(function() {
     }
 
     // Indication text
-    for(var i = 0; i < max; i++) {
+    for (var i = 0; i < max; i++) {
       var currentValue;
 
-      if(i < (max / 2))
+      if (i < (max / 2))
         currentValue = parseInt(-(max / 2 - i));
-      else if(i > (max / 2))
+      else if (i > (max / 2))
         currentValue = parseInt(((i - max) + 1) + (max / 2) + 1);
 
       context.beginPath();
 
-      if(currentValue == 0)
+      if (currentValue == 0)
         continue;
 
-      if(i > (max / 2))
+      if (i > (max / 2))
         context.fillText(currentValue - 1, i * (gridSize / 10) - 20, (gridSize / 2) + 20);
-      else if(i < (max / 2))
+      else if (i < (max / 2))
         context.fillText(currentValue, i * (gridSize / 10) + 5, (gridSize / 2) + 20);
     }
 
     // Indication text
-    for(var i = 0; i < max; i++) {
+    for (var i = 0; i < max; i++) {
       var currentValue;
 
-      if(i > (max / 2))
+      if (i > (max / 2))
         currentValue = parseInt((max / 2 - i) - 1);
-      else if(i < (max / 2))
+      else if (i < (max / 2))
         currentValue = parseInt((max - i) - (max / 2) + 1);
 
       context.beginPath();
 
-      if(i > (max / 2))
+      if (i > (max / 2))
         context.fillText(currentValue, (gridSize / 2) - 20, i * (gridSize / 10) - 5);
-      else if(i < (max / 2))
+      else if (i < (max / 2))
         context.fillText(currentValue, (gridSize / 2) - 20, i * (gridSize / 10) - 30);
     }
   }

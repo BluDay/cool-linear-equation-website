@@ -1,15 +1,15 @@
 ﻿@charset "UTF-8";
 
 /*
-*	This is the styling sheet for
-*	all elements on all HTML sites
-*	within this domain.
-*	Made by Bachir B
+*   This is the styling sheet for
+*   all elements on all HTML sites
+*   within this domain.
+*   Made by Bachir B
 */
 
 /*
 @font-face {
-	font-family: 'GeosansLight';
+    font-family: 'GeosansLight';
     src: url('Zapfino.eot');
     src: url('Zapfino.eot?#iefix') format('embedded-opentype'),
          url('Zapfino.woff') format('woff'),
@@ -19,367 +19,367 @@
 */
 
 @font-face {
-	font-family: 'Geosans Light';
-	src: url('../assets/fonts/GeosansLight.ttf') format('truetype');
+    font-family: 'Geosans Light';
+    src: url('../assets/fonts/GeosansLight.ttf') format('truetype');
 }
 
 *, html {
-	color: #fff;
-	font-family: 'Geosans Light';
+    color: #fff;
+    font-family: 'Geosans Light';
 }
 
 body {
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
-	background-color: rgba(54, 63, 106, 1);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(54, 63, 106, 1);
 }
 
 .wrapper-opaque {
-	margin: 0;
-	margin-top: 0;
-	padding-top: 0;
-	padding: 0;
-	width: 100%;
-	background: transparent;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding: 0;
+    width: 100%;
+    background: transparent;
 }
 
 .wrapper {
-	margin: auto;
-	padding: 25px 0;
-	padding-bottom: 100px;
-	width: 100%;
-	height: auto;
-	background: #e1e1e1;
+    margin: auto;
+    padding: 25px 0;
+    padding-bottom: 100px;
+    width: 100%;
+    height: auto;
+    background: #e1e1e1;
 }
 
 .wrapper h1 {
-	color: #555;
-	font-size: 55px;
-	text-align: center;
+    color: #555;
+    font-size: 55px;
+    text-align: center;
 }
 
 .wrapper pre {
-	color: #555;
-	font-size: 22px;
-	text-align: center;
-	margin: 10px auto;
-	width: 300px;
-	padding: 25px;
-	white-space: pre-wrap;
+    color: #555;
+    font-size: 22px;
+    text-align: center;
+    margin: 10px auto;
+    width: 300px;
+    padding: 25px;
+    white-space: pre-wrap;
 }
 
 #play-toggle-button {
-	display: block;
-	height: 40px;
-	width: 40px;
-	padding: 0px;
-	margin: auto;
-	z-index: 0;
+    display: block;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    margin: auto;
+    z-index: 0;
 
-	position: absolute;
-	bottom: 8.525vw;
-	left: 10px;
+    position: absolute;
+    bottom: 8.525vw;
+    left: 10px;
 
-	border-radius: 30px;
-	border: 0;
-	background: rgba(85, 99, 170, 1);
+    border-radius: 30px;
+    border: 0;
+    background: rgba(85, 99, 170, 1);
 
-	background-image: url('../assets/images/pause.png');
-	background-size: 15px;
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
+    background-image: url('../assets/images/pause.png');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 
-	transition: 0.2s all;
+    transition: 0.2s all;
 }
 
 .bg-image {
-	margin: auto;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -100;
-	
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    
 
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: #e1e1e1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e1e1e1;
 }
 
 .navigation-bar-opaque.navigation-bar {
-	overflow: hidden;
-	width: 100%;
-	height: 85px;
-	padding: 0;
-	background: rgba(85, 99, 170, 1);
-	position: fixed;
-	transition: 0.5s all;
+    overflow: hidden;
+    width: 100%;
+    height: 85px;
+    padding: 0;
+    background: rgba(85, 99, 170, 1);
+    position: fixed;
+    transition: 0.5s all;
 }
 
 .navigation-bar-opaque {
-	overflow: hidden;
-	width: 100%;
-	height: 85px;
-	padding: 15px 0;
-	position: fixed;
-	transition: 0.5s all;
+    overflow: hidden;
+    width: 100%;
+    height: 85px;
+    padding: 15px 0;
+    position: fixed;
+    transition: 0.5s all;
 }
 
 #logo {
-	height: 100%;
-	width: 75px;
-	float: left;
-	margin: auto;
-	background-image: url('../assets/images/logo.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	transition: 0.5s all;
+    height: 100%;
+    width: 75px;
+    float: left;
+    margin: auto;
+    background-image: url('../assets/images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s all;
 }
 
 ul {
-	display: inline-block;
-	height: 100%;
-	width: auto;
-	float: right;
-	padding: 0;
-	margin: 0;
-	transition: 0.5s all;
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    float: right;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s all;
 }
 
 li {
-	display: inline;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 li a {
-	padding: 0 20px;
-	height: 85px;
-	line-height: 85px;
-	font-size: 28px;
-	text-decoration: none;
-	transition: 0.25s all;
-	cursor: pointer;
+    padding: 0 20px;
+    height: 85px;
+    line-height: 85px;
+    font-size: 28px;
+    text-decoration: none;
+    transition: 0.25s all;
+    cursor: pointer;
 }
 
 li a:hover {
-	color: #ccc;
-	font-size: 32px;
+    color: #ccc;
+    font-size: 32px;
 }
 
 li a:active {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 .start-container {
-	display: block;
-	padding: 30vh 0;
-	width: 100%;
+    display: block;
+    padding: 30vh 0;
+    width: 100%;
 }
 
 .start-container h1 {
-	color: #eee;
-	font-size: 72px;
-	font-weight: 100;
-	text-align: center;
+    color: #eee;
+    font-size: 72px;
+    font-weight: 100;
+    text-align: center;
 }
 
 .cool-button {
-	display: block;
-	height: 60px;
-	width: auto;
-	padding: 0 30px;
-	margin: auto;
+    display: block;
+    height: 60px;
+    width: auto;
+    padding: 0 30px;
+    margin: auto;
 
-	color: #fff;
-	font-size: 28px;
-	text-decoration: none;
-	text-align: center;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;
 
-	border-radius: 30px;
-	border: 0;
-	background: rgba(85, 99, 170, 1);
+    border-radius: 30px;
+    border: 0;
+    background: rgba(85, 99, 170, 1);
 
-	cursor: pointer;
+    cursor: pointer;
 
-	transition: 0.2s all;
+    transition: 0.2s all;
 }
 
 .cool-button:hover {
-	background: rgba(85, 99, 170, 0.8);
-	font-size: 30px;
+    background: rgba(85, 99, 170, 0.8);
+    font-size: 30px;
 }
 
 .cool-button:active {
-	background: rgba(85, 99, 170, 0.8);
-	font-size: 24px;
+    background: rgba(85, 99, 170, 0.8);
+    font-size: 24px;
 }
 
 .cool-text-input {
-	display: block;
-	height: 60px;
-	width: auto;
-	margin: 10px auto;
+    display: block;
+    height: 60px;
+    width: auto;
+    margin: 10px auto;
 
-	color: #777;
-	font-size: 28px;
-	text-decoration: none;
-	text-align: center;
+    color: #777;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;
 
-	border-radius: 30px;
-	border: 1px solid rgba(85, 99, 170, 1);
+    border-radius: 30px;
+    border: 1px solid rgba(85, 99, 170, 1);
 
-	background: #e1e1e1;
+    background: #e1e1e1;
 
-	transition: 0.2s all;
+    transition: 0.2s all;
 }
 
 .cool-text-input:hover {
-	background: #fff;
+    background: #fff;
 }
 
 .cool-text-input:focus {
-	background: #fff;
+    background: #fff;
 }
 
 .value-text-big {
-	font-size: 50px;
-	font-weight: 200;
-	text-align: center;
-	color: rgba(85, 99, 170, 1);
-	margin: 20px 0;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    color: rgba(85, 99, 170, 1);
+    margin: 20px 0;
 }
 
 #game-choice-status {
-	font-size: 50px;
-	font-weight: 200;
-	text-align: center;
-	color: darkgrey;
-	margin: 20px 0;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    color: darkgrey;
+    margin: 20px 0;
 }
 
 #game-counter {
-	font-size: 25px;
-	font-weight: 200;
-	text-align: center;
-	color: #000;
-	margin: 20px 0;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    color: #000;
+    margin: 20px 0;
 }
 
 #canvas-context {
-	display: block;
-	margin: 25px auto;
-	box-shadow: 0px 1px 3px #333;
-	background-color: #444;
-	transition: 1s all;
-	z-index: 2;
+    display: block;
+    margin: 25px auto;
+    box-shadow: 0px 1px 3px #333;
+    background-color: #444;
+    transition: 1s all;
+    z-index: 2;
 }
 
 #canvas-interaction-container {
-	display: none;
-	height: auto;
-	width: auto;
-	margin: 20px auto;
+    display: none;
+    height: auto;
+    width: auto;
+    margin: 20px auto;
 }
 
 #canvas-graph-button {
-	position: absolute;
-	height: 15px;
-	width: 15px;
-	border-radius: 5px;
-	z-index: 100;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    z-index: 100;
 
-	background: red;
+    background: red;
 }
 
 #interaction-sub-container {
-	display: flex;
-	margin: auto;
-	padding: 10px;
-	width: 400px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 400px;
 }
 
 #info-container {
-	display: flex;
-	height: auto;
-	width: 90%;
-	margin: 50px auto;
-	padding: 5px;
+    display: flex;
+    height: auto;
+    width: 90%;
+    margin: 50px auto;
+    padding: 5px;
 }
 
 #info-logo {
-	margin: auto;
-	height: 300px;
-	width: 300px;
-	padding: 10px;
-	background-image: url('../assets/images/logo.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    background-image: url('../assets/images/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #info-container pre {
-	display: block;
-	height: 300px;
-	width: 40vw;
-	margin: auto;
-	padding: 10px;
-	color: #fff;
-	font-size: 30px;
-	text-align: left;
-	white-space: pre-wrap;
+    display: block;
+    height: 300px;
+    width: 40vw;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-align: left;
+    white-space: pre-wrap;
 }
 
 #footer {
-	width: 100%;
-	padding: 50px 0;
-	background: #222;
+    width: 100%;
+    padding: 50px 0;
+    background: #222;
 }
 
 #footer h1 {
-	color: #444;
-	font-size: 22px;
-	margin: auto;
-	text-align: center;
+    color: #444;
+    font-size: 22px;
+    margin: auto;
+    text-align: center;
 }
 
 #bottom-button {
-	position: fixed;
-	bottom: -500px;
-	right: 15px;
-	height: 50px;
-	width: 50px;
-	padding: 10px;
-	border-radius: 50px;
+    position: fixed;
+    bottom: -500px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50px;
 
-	background: rgba(85, 99, 170, 1);
-	background-image: url('../assets/images/up.png');
-	background-size: 30px;
-	background-repeat: no-repeat;
-	background-position: center;
+    background: rgba(85, 99, 170, 1);
+    background-image: url('../assets/images/up.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
 
-	transition: 0.2s all;
-	cursor: pointer;
+    transition: 0.2s all;
+    cursor: pointer;
 }
 
 #bottom-button:hover {
-	background: rgba(85, 99, 170, 1);
-	background-image: url('../assets/images/up.png');
-	background-size: 40px;
-	background-repeat: no-repeat;
-	background-position: center;
+    background: rgba(85, 99, 170, 1);
+    background-image: url('../assets/images/up.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #bottom-button:active {
-	background: rgba(85, 99, 170, 0.8);
-	background-image: url('../assets/images/up.png');
-	background-size: 20px;
-	background-repeat: no-repeat;
-	background-position: center;
+    background: rgba(85, 99, 170, 0.8);
+    background-image: url('../assets/images/up.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
